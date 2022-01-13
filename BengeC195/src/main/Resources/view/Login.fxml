@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Login">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+         <fill>
+            <LinearGradient endX="0.3333333333333333" endY="1.0" startX="0.01904761904761905" startY="0.8809523809523809">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.17592592537403107" green="0.5" blue="0.4729938209056854" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.10980392247438431" green="0.40392157435417175" blue="0.41960784792900085" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TextField fx:id="userID" layoutX="295.0" layoutY="130.0" prefHeight="25.0" prefWidth="176.0" promptText="Enter your User ID" />
+      <PasswordField fx:id="password" layoutX="295.0" layoutY="167.0" prefHeight="25.0" prefWidth="176.0" promptText="Enter your Password" />
+      <Button fx:id="buttonLogin" layoutX="421.0" layoutY="200.0" mnemonicParsing="false" onAction="#login" text="Log In" textFill="#1c676b" />
+      <Button fx:id="buttonExit" layoutX="295.0" layoutY="200.0" mnemonicParsing="false" onAction="#cancel" text="  Exit  " />
+      <Label fx:id="countryLabel" layoutX="451.0" layoutY="24.0" prefHeight="17.0" prefWidth="86.0" text="Country:" />
+      <Label fx:id="languageLabel" layoutX="451.0" layoutY="49.0" text="Language: " />
+   </children>
+</AnchorPane>
