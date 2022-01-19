@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="340.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditCustomer">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#22777af5" height="39.0" stroke="#22787c" strokeType="INSIDE" width="355.0" />
+        <Label layoutX="127.0" layoutY="6.0" text="Edit Customer" textFill="#00000066">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="80.0" text="Name">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <TextField fx:id="name" layoutX="149.0" layoutY="80.0" prefHeight="25.0" prefWidth="174.0" />
+        <Label layoutX="34.0" layoutY="192.0" text="Address">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <Label layoutX="33.0" layoutY="118.0" text="Phone">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <Label layoutX="32.0" layoutY="155.0" text="Zip">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <Button layoutX="279.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleSaveButton" text="Save">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="35.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleBackButton" text="Cancel">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="32.0" layoutY="49.0" text="Customer ID">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="CID" editable="false" layoutX="149.0" layoutY="49.0" prefHeight="25.0" prefWidth="38.0" />
+        <Label layoutX="214.0" layoutY="50.0" text="User ID">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="UID" editable="false" layoutX="284.0" layoutY="49.0" prefHeight="25.0" prefWidth="38.0" />
+      <TextField fx:id="phone" layoutX="149.0" layoutY="118.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="zip" layoutX="177.0" layoutY="155.0" prefHeight="25.0" prefWidth="109.0" />
+      <TextField fx:id="address" layoutX="149.0" layoutY="192.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="33.0" layoutY="231.0" text="Location">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="location" layoutX="149.0" layoutY="231.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="174.0" />
+    </children>
+</AnchorPane>
