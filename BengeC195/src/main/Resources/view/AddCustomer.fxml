@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="340.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomer">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#22777af5" height="39.0" stroke="#22787c" strokeType="INSIDE" width="355.0" />
+        <Label layoutX="32.0" layoutY="49.0" text="Customer ID">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="CID" editable="false" layoutX="143.0" layoutY="49.0" prefHeight="25.0" prefWidth="38.0" />
+        <Label layoutX="214.0" layoutY="50.0" text="User ID">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="UID" editable="false" layoutX="278.0" layoutY="49.0" prefHeight="25.0" prefWidth="38.0" />
+        <Label layoutX="127.0" layoutY="6.0" text="Add Customer" textFill="#00000066">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="80.0" text="Name">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <TextField fx:id="name" layoutX="143.0" layoutY="80.0" prefHeight="25.0" prefWidth="174.0" />
+        <Label layoutX="32.0" layoutY="174.0" text="Address">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <Label layoutX="32.0" layoutY="239.0" text="Phone">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <Label layoutX="32.0" layoutY="205.0" text="Postal Code">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <Button layoutX="265.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="30.0" prefWidth="61.0" text="Save">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="20.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleBackButton" text="Cancel">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <TextField fx:id="phone" layoutX="146.0" layoutY="239.0" prefHeight="25.0" prefWidth="174.0" />
+        <TextField fx:id="zip" layoutX="145.0" layoutY="205.0" prefHeight="25.0" prefWidth="174.0" />
+        <TextField fx:id="address" layoutX="145.0" layoutY="174.0" prefHeight="25.0" prefWidth="174.0" />
+        <Label layoutX="32.0" layoutY="143.0" text="Location">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+      <ComboBox fx:id="location" layoutX="145.0" layoutY="143.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="32.0" layoutY="112.0" text="Country">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="country" layoutX="145.0" layoutY="112.0" onAction="#handleCountrySelection" prefHeight="25.0" prefWidth="174.0" />
+    </children>
+</AnchorPane>

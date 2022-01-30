@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="476.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditAppointment">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#22777af5" height="39.0" stroke="#22787c" strokeType="INSIDE" width="462.0" />
+        <ComboBox fx:id="location" disable="true" layoutX="194.0" layoutY="245.0" prefHeight="25.0" prefWidth="174.0" />
+        <Label layoutX="156.0" layoutY="6.0" text="Edit Appointment" textFill="#00000066">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="78.0" layoutY="76.0" text="Customer">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <TextField fx:id="name" editable="false" layoutX="194.0" layoutY="76.0" prefHeight="25.0" prefWidth="174.0" />
+        <Label layoutX="78.0" layoutY="108.0" text="Date">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <DatePicker fx:id="date" editable="false" layoutX="194.0" layoutY="108.0" onAction="#handleDateChoice" />
+        <Label layoutX="78.0" layoutY="210.0" text="Contact">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <Label layoutX="78.0" layoutY="141.0" text="Start Time">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <ComboBox fx:id="time" layoutX="194.0" layoutY="141.0" onAction="#handleTimeChoice" prefHeight="25.0" prefWidth="174.0" />
+        <ComboBox fx:id="contact" layoutX="194.0" layoutY="210.0" prefHeight="25.0" prefWidth="174.0" />
+        <Label layoutX="78.0" layoutY="280.0" text="Type">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <Label layoutX="78.0" layoutY="245.0" text="Location">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <TextField fx:id="type" layoutX="194.0" layoutY="280.0" prefHeight="25.0" prefWidth="174.0" />
+        <Button layoutX="342.0" layoutY="416.0" mnemonicParsing="false" onAction="#handleSaveButton" text="Save">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="68.0" layoutY="416.0" mnemonicParsing="false" onAction="#handleBackButton" text="Cancel">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="78.0" layoutY="314.0" text="Description">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="description" layoutX="194.0" layoutY="314.0" prefHeight="25.0" prefWidth="174.0" />
+        <Label layoutX="262.0" layoutY="45.0" text="User ID">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="UID" editable="false" layoutX="330.0" layoutY="45.0" prefHeight="25.0" prefWidth="38.0" />
+        <Label layoutX="78.0" layoutY="349.0" text="Title">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="title" layoutX="194.0" layoutY="349.0" prefHeight="25.0" prefWidth="174.0" />
+        <Label layoutX="78.0" layoutY="45.0" text="Customer ID">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="CID" editable="false" layoutX="194.0" layoutY="45.0" prefHeight="25.0" prefWidth="38.0" />
+      <Label layoutX="78.0" layoutY="175.0" text="Minutes">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="minute" layoutX="194.0" layoutY="175.0" prefHeight="25.0" prefWidth="174.0" />
+    </children>
+</AnchorPane>
